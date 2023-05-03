@@ -1,5 +1,12 @@
 # Changelog
 
+## \[2.0.0-alpha.5]
+
+- Moved the `shell` functionality to its own plugin in the plugins-workspace repository.
+  - [96639ca2](https://www.github.com/tauri-apps/tauri/commit/96639ca239c9e4f75142fc07868ac46822111cff) refactor(core): remove shell APIs ([#6749](https://www.github.com/tauri-apps/tauri/pull/6749)) on 2023-04-20
+- Refactor the `Context` conditional fields and only parse the tray icon on desktop.
+  - [ae102980](https://www.github.com/tauri-apps/tauri/commit/ae102980fcdde3f55effdc0623ea425b48d07dd1) refactor(core): read tray icon only on desktop, refactor Context ([#6719](https://www.github.com/tauri-apps/tauri/pull/6719)) on 2023-04-19
+
 ## \[2.0.0-alpha.4]
 
 - Added `android` configuration object under `tauri > bundle`.

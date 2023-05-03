@@ -1,5 +1,53 @@
 # Changelog
 
+## \[2.0.0-alpha.9]
+
+- Added static function `loadConfig` on the Android `PluginManager` class.
+  - [73c803a5](https://www.github.com/tauri-apps/tauri/commit/73c803a561181137f20366f5d52511392a619f2b) feat(android): inject tauri.conf.json asset, add plugin config load API ([#6837](https://www.github.com/tauri-apps/tauri/pull/6837)) on 2023-05-03
+- Adjust Android plugin exception error.
+  - [edb16d13](https://www.github.com/tauri-apps/tauri/commit/edb16d13a503da4b264ce459319fec25374c5c4f) fix(android): adjust Android plugin command exception to use e.message ([#6831](https://www.github.com/tauri-apps/tauri/pull/6831)) on 2023-05-01
+- On Android, update proguard rules.
+  - [31444ac1](https://www.github.com/tauri-apps/tauri/commit/31444ac196add770f2ad18012d7c18bce7538f22) chore(deps): update wry to 0.28 ([#6725](https://www.github.com/tauri-apps/tauri/pull/6725)) on 2023-04-23
+- Enhance Android's `JSObject` return types.
+  - [2a5175a8](https://www.github.com/tauri-apps/tauri/commit/2a5175a8f8f318aac9a6434271f2cc065e5989ae) feat(android): enhance JSObject return types ([#6779](https://www.github.com/tauri-apps/tauri/pull/6779)) on 2023-04-23
+- Use actual iOS plugin instance to run command with `throws`.
+  - [bb2a8ccf](https://www.github.com/tauri-apps/tauri/commit/bb2a8ccf1356e59b98947d827d61e4e99533f2bc) fix(ios): use correct class to call plugin command with `throws` ([#6830](https://www.github.com/tauri-apps/tauri/pull/6830)) on 2023-05-01
+- Generate `TauriActivity` Kotlin class on the build script.
+  - [94224906](https://www.github.com/tauri-apps/tauri/commit/942249060ed12a5d21a2b21c30e0638c1d2b9df0) refactor(core): generate TauriActivity on build script ([#6783](https://www.github.com/tauri-apps/tauri/pull/6783)) on 2023-04-24
+- Expose plugin configuration on the Android and iOS plugin classes.
+  - [dfa407ff](https://www.github.com/tauri-apps/tauri/commit/dfa407ffcbc8a853d61139b68b55747ae49fb231) feat(mobile): add plugin config to the Plugin class ([#6763](https://www.github.com/tauri-apps/tauri/pull/6763)) on 2023-04-23
+- Moved the `cli` feature to its own plugin in the plugins-workspace repository.
+  - [09376af5](https://www.github.com/tauri-apps/tauri/commit/09376af59424cc27803fa2820d2ac0d4cdc90a6d) refactor(core): remove `cli` feature ([#6704](https://www.github.com/tauri-apps/tauri/pull/6704)) on 2023-04-14
+- Moved the dialog APIs to its own plugin in the plugins-workspace repository.
+  - [2d5378bf](https://www.github.com/tauri-apps/tauri/commit/2d5378bfc1ba817ee2f331b41738a90e5997e5e8) refactor(core): move dialog API to its own plugin ([#6717](https://www.github.com/tauri-apps/tauri/pull/6717)) on 2023-04-18
+- Moved the file system APIs to its own plugin in the plugins-workspace repository.
+  - [fc4d687e](https://www.github.com/tauri-apps/tauri/commit/fc4d687ef0ef2ea069ed73c40916da733b5dcb8f) refactor(core): move file system endpoints to its own plugin ([#6716](https://www.github.com/tauri-apps/tauri/pull/6716)) on 2023-04-16
+- Moved the `http` feature to its own plugin in the plugins-workspace repository.
+  - [f78a3783](https://www.github.com/tauri-apps/tauri/commit/f78a378344bbec48533641661d865920a8f46f8f) refactor(core): remove http features ([#6742](https://www.github.com/tauri-apps/tauri/pull/6742)) on 2023-04-19
+- Moved the `shell` functionality to its own plugin in the plugins-workspace repository.
+  - [96639ca2](https://www.github.com/tauri-apps/tauri/commit/96639ca239c9e4f75142fc07868ac46822111cff) refactor(core): remove shell APIs ([#6749](https://www.github.com/tauri-apps/tauri/pull/6749)) on 2023-04-20
+- Added the `onNewIntent` Plugin hook on Android.
+  - [d693e526](https://www.github.com/tauri-apps/tauri/commit/d693e526e8607129d7f7b62a10db715f3b87d2b9) feat(android): add `onNewIntent` plugin hook ([#6780](https://www.github.com/tauri-apps/tauri/pull/6780)) on 2023-04-23
+- Add `app` method for the `PluginApi` struct.
+  - [34b8f339](https://www.github.com/tauri-apps/tauri/commit/34b8f339a4276ebff20b9d52caa103e8e3a7af66) feat(core): add `app` method on `PluginApi` ([#6705](https://www.github.com/tauri-apps/tauri/pull/6705)) on 2023-04-14
+- Moved the `tauri::api::process` module to `tauri::process`.
+  - [96639ca2](https://www.github.com/tauri-apps/tauri/commit/96639ca239c9e4f75142fc07868ac46822111cff) refactor(core): remove shell APIs ([#6749](https://www.github.com/tauri-apps/tauri/pull/6749)) on 2023-04-20
+- Changed how the `tauri-android` dependency is injected. This requires the `gen/android` project to be recreated.
+  - [cdad6e08](https://www.github.com/tauri-apps/tauri/commit/cdad6e083728ea61bd6fc734ef93f6306056ea2e) refactor(core): use absolute path for the tauri Android library ([#6774](https://www.github.com/tauri-apps/tauri/pull/6774)) on 2023-04-23
+- Moved the `clipboard` feature to its own plugin in the plugins-workspace repository.
+  - [cebd7526](https://www.github.com/tauri-apps/tauri/commit/cebd75261ac71b98976314a450cb292eeeec1515) refactor(core): remove the clipboard APIs ([#6728](https://www.github.com/tauri-apps/tauri/pull/6728)) on 2023-04-17
+  - [db9c12c1](https://www.github.com/tauri-apps/tauri/commit/db9c12c1ad91767727512c6689b30ac21aa53846) refactor(runtime): remove clipboard APIs ([#6735](https://www.github.com/tauri-apps/tauri/pull/6735)) on 2023-04-18
+- Moved the `global-shortcut` feature to its own plugin in the plugins-workspace repository.
+  - [3f17ee82](https://www.github.com/tauri-apps/tauri/commit/3f17ee82f6ff21108806edb7b00500b8512b8dc7) refactor(core): remove global shortcut APIs ([#6737](https://www.github.com/tauri-apps/tauri/pull/6737)) on 2023-04-18
+- Refactor the `Context` conditional fields and only parse the tray icon on desktop.
+  - [ae102980](https://www.github.com/tauri-apps/tauri/commit/ae102980fcdde3f55effdc0623ea425b48d07dd1) refactor(core): read tray icon only on desktop, refactor Context ([#6719](https://www.github.com/tauri-apps/tauri/pull/6719)) on 2023-04-19
+- Remove the updater's dialog option.
+  - [2d5378bf](https://www.github.com/tauri-apps/tauri/commit/2d5378bfc1ba817ee2f331b41738a90e5997e5e8) refactor(core): move dialog API to its own plugin ([#6717](https://www.github.com/tauri-apps/tauri/pull/6717)) on 2023-04-18
+- Expose `SafePathBuf` type in `tauri::path`.
+  - [22a76338](https://www.github.com/tauri-apps/tauri/commit/22a763381622407d58ae72aa24c0afff00b40e04) feat(core): expose `SafePathBuf` ([#6713](https://www.github.com/tauri-apps/tauri/pull/6713)) on 2023-04-15
+- Change iOS plugin init function signature to `func init_plugin() -> Plugin`.
+  - [dfa407ff](https://www.github.com/tauri-apps/tauri/commit/dfa407ffcbc8a853d61139b68b55747ae49fb231) feat(mobile): add plugin config to the Plugin class ([#6763](https://www.github.com/tauri-apps/tauri/pull/6763)) on 2023-04-23
+
 ## \[2.0.0-alpha.8]
 
 - Fixes boolean plugin parameters freezing the application.

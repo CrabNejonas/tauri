@@ -1,5 +1,10 @@
 # Changelog
 
+## \[2.0.0-alpha.5]
+
+- Moved the `shell` functionality to its own plugin in the plugins-workspace repository.
+  - [96639ca2](https://www.github.com/tauri-apps/tauri/commit/96639ca239c9e4f75142fc07868ac46822111cff) refactor(core): remove shell APIs ([#6749](https://www.github.com/tauri-apps/tauri/pull/6749)) on 2023-04-20
+
 ## \[2.0.0-alpha.4]
 
 - Added `android` configuration object under `tauri > bundle`.

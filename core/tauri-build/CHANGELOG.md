@@ -1,5 +1,12 @@
 # Changelog
 
+## \[2.0.0-alpha.5]
+
+- Use absolute path to each Android plugin project instead of copying the files to enhance developer experience.
+  - [2969d1cb](https://www.github.com/tauri-apps/tauri/commit/2969d1cbba39301f9cc611d9f7d7051d80eef846) refactor(core): use absolute path to plugin Android project ([#6773](https://www.github.com/tauri-apps/tauri/pull/6773)) on 2023-04-23
+- Changed how the `tauri-android` dependency is injected. This requires the `gen/android` project to be recreated.
+  - [cdad6e08](https://www.github.com/tauri-apps/tauri/commit/cdad6e083728ea61bd6fc734ef93f6306056ea2e) refactor(core): use absolute path for the tauri Android library ([#6774](https://www.github.com/tauri-apps/tauri/pull/6774)) on 2023-04-23
+
 ## \[2.0.0-alpha.4]
 
 - Added `android` configuration object under `tauri > bundle`.

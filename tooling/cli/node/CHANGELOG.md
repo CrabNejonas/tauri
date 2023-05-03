@@ -1,5 +1,18 @@
 # Changelog
 
+## \[2.0.0-alpha.9]
+
+- Add `key.properties` file to android's `.gitignore`.
+  - [19cd0e49](https://www.github.com/tauri-apps/tauri/commit/19cd0e49603ad3500cd2180bfa16e1649e3a771a) feat: add `key.properties` to android gitignore ([#6811](https://www.github.com/tauri-apps/tauri/pull/6811)) on 2023-04-27
+- On mobile, fix regression introduced in `tauri-cli` version `2.0.0-alpha.3` where library not found error was thrown.
+  - [124d5c5a](https://www.github.com/tauri-apps/tauri/commit/124d5c5adf67f0b68d2e41c7ddb07d9cb63f1996) fix(cli): use snake_case fallback of app_name ([#6788](https://www.github.com/tauri-apps/tauri/pull/6788)) on 2023-04-25
+- Update mobile template to `wry@0.28`
+  - [31444ac1](https://www.github.com/tauri-apps/tauri/commit/31444ac196add770f2ad18012d7c18bce7538f22) chore(deps): update wry to 0.28 ([#6725](https://www.github.com/tauri-apps/tauri/pull/6725)) on 2023-04-23
+- Update tauri-mobile to fix running ADB scripts.
+  - [41f49aea](https://www.github.com/tauri-apps/tauri/commit/41f49aeae646f2cb70b42002bb1371c79e592243) fix(cli.js): adb commands not working, closes [#6659](https://www.github.com/tauri-apps/tauri/pull/6659) ([#6708](https://www.github.com/tauri-apps/tauri/pull/6708)) on 2023-04-23
+- Inject Tauri configuration in the Android assets.
+  - [73c803a5](https://www.github.com/tauri-apps/tauri/commit/73c803a561181137f20366f5d52511392a619f2b) feat(android): inject tauri.conf.json asset, add plugin config load API ([#6837](https://www.github.com/tauri-apps/tauri/pull/6837)) on 2023-05-03
+
 ## \[2.0.0-alpha.8]
 
 - Do not gitignore the Android project's `buildSrc` folder by default since we removed absolute paths from it.

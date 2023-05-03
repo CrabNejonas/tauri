@@ -1,5 +1,13 @@
 # Changelog
 
+## \[0.13.0-alpha.5]
+
+- Moved the `clipboard` feature to its own plugin in the plugins-workspace repository.
+  - [cebd7526](https://www.github.com/tauri-apps/tauri/commit/cebd75261ac71b98976314a450cb292eeeec1515) refactor(core): remove the clipboard APIs ([#6728](https://www.github.com/tauri-apps/tauri/pull/6728)) on 2023-04-17
+  - [db9c12c1](https://www.github.com/tauri-apps/tauri/commit/db9c12c1ad91767727512c6689b30ac21aa53846) refactor(runtime): remove clipboard APIs ([#6735](https://www.github.com/tauri-apps/tauri/pull/6735)) on 2023-04-18
+- Moved the `global-shortcut` feature to its own plugin in the plugins-workspace repository.
+  - [3f17ee82](https://www.github.com/tauri-apps/tauri/commit/3f17ee82f6ff21108806edb7b00500b8512b8dc7) refactor(core): remove global shortcut APIs ([#6737](https://www.github.com/tauri-apps/tauri/pull/6737)) on 2023-04-18
+
 ## \[0.13.0-alpha.4]
 
 - Added `android` configuration object under `tauri > bundle`.

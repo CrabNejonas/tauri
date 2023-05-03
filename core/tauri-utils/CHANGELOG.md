@@ -1,5 +1,12 @@
 # Changelog
 
+## \[2.0.0-alpha.5]
+
+- Moved the `cli` feature to its own plugin in the plugins-workspace repository.
+  - [09376af5](https://www.github.com/tauri-apps/tauri/commit/09376af59424cc27803fa2820d2ac0d4cdc90a6d) refactor(core): remove `cli` feature ([#6704](https://www.github.com/tauri-apps/tauri/pull/6704)) on 2023-04-14
+- Remove the updater's dialog option.
+  - [2d5378bf](https://www.github.com/tauri-apps/tauri/commit/2d5378bfc1ba817ee2f331b41738a90e5997e5e8) refactor(core): move dialog API to its own plugin ([#6717](https://www.github.com/tauri-apps/tauri/pull/6717)) on 2023-04-18
+
 ## \[2.0.0-alpha.4]
 
 - Added `android` configuration object under `tauri > bundle`.

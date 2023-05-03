@@ -1,5 +1,10 @@
 # Changelog
 
+## \[2.0.0-alpha.5]
+
+- Removed the `UpdaterSettings::dialog` field.
+  - [2d5378bf](https://www.github.com/tauri-apps/tauri/commit/2d5378bfc1ba817ee2f331b41738a90e5997e5e8) refactor(core): move dialog API to its own plugin ([#6717](https://www.github.com/tauri-apps/tauri/pull/6717)) on 2023-04-18
+
 ## \[2.0.0-alpha.4]
 
 - Added `android` configuration object under `tauri > bundle`.
